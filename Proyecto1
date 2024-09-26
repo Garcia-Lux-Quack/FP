@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std; 
+
+int main()
+{
+    // Declaración de número entero 
+    int numeroEntero = 2028; 
+    //Imprimir el valor de numeroEntero
+    cout << "Entero: " << numeroEntero << endl;
+
+    //Declaración de un número corto
+    int short numeroCorto = 32000;
+    //Imprimir el valor de numeroCorto 
+    cout << "Entero Corto: " << numeroCorto << endl; 
+
+    //Declaración de número largo
+    long int numeroLargo = 5632924562L; 
+    //Imprimir el valor de numeroLargo
+    cout << "Entero Largo: " << numeroLargo << endl; 
+
+    //Declaración de número entero sin signo
+    unsigned int numeroSinSigno = 4000000000U; 
+    //Imprimir el valor de numeroSigno 
+    cout << "Entero sin signo: " << numeroSinSigno << endl; 
+
+    //Declaración de número entero corto sin signo 
+    unsigned short int numeroCortoSinSigno = 65000; 
+    //Imprimir el valor de numeroCortoSinSigno
+    cout << "Entero corto sin signo: " << numeroCortoSinSigno << endl; 
+
+    //Declaración de un número entero largo sin signo
+    unsigned long int numeroLargoSinSigno = 40000000000000L; 
+    //Imprimir el valor de numeroLargoSinSigno 
+    cout << "Entero largo sin signo: " << numeroLargoSinSigno << endl; 
+
+    //Declaración de número entero signo explicito 
+    signed int numeroConSigno = -65; 
+    //Imprimir el valor de numeroConSigno 
+    cout << "Entero signo explicito: " << numeroConSigno << endl; 
+
+    //Declaraicón de número entero corto con signo explicito 
+    signed short int numeroCortoConSigno = 3015; 
+    //Imprimir el valor de nuermoCortoConSigno
+    cout << "Entero corto con signo explicito: " << numeroCortoConSigno << endl;
+
+    //Declaración de ´número entero largo con signo explicito 
+    signed long int numeroLargoConSigno = -15975364L; 
+    //Imprimir el valor de numeroLargoConSigno 
+    cout << "Entero largo con signo explicito: " << numeroLargoConSigno << endl; 
