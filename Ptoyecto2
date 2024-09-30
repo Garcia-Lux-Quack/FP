@@ -1,0 +1,95 @@
+// Proyecto2.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+using namespace std;
+
+int main() {
+    //Funcion de localización de las preferencias punto decimal
+    locale loc("");
+    cout.imbue(loc);
+    // 1. Entero (int)
+    int numeroEntero = 42;
+    cout << "Entero: " << numeroEntero << endl;
+    cout << "Rango int : " << numeric_limits<unsigned long long>::min() << " a " << numeric_limits<unsigned long long>::max();
+
+    // 2. Entero corto (short int)
+    short int numeroCorto = 32000;
+    cout << "Entero corto: " << numeroCorto << endl;
+    cout << "Rango short int : " << numeric_limits<short int>::min() << " a " << numeric_limits<short int>::max();
+
+    // 3. Entero largo (long long)
+    long long numeroLargo = 1234567890L;
+    cout << "Entero largo: " << numeroLargo << endl;
+    cout << "Rango long long : " << numeric_limits<long long>::min() << " a " << numeric_limits<long long> ::max();
+
+    // 4. Entero sin signo (unsigned int)
+    unsigned int numeroSinSigno = 4000000000U;
+    cout << "Entero sin signo: " << numeroSinSigno << endl;
+    cout << "Rango unsinged int : " << numeric_limits<unsigned int>::min() << " a " << numeric_limits<unsigned int>::max();
+
+    // 5. Entero corto sin signo (unsigned short int)
+    unsigned short int numeroCortoSinSigno = 65000;
+    cout << "Entero corto sin signo: " << numeroCortoSinSigno << endl;
+    cout << "Rango unsigned short int : " << numeric_limits<unsigned short int>::min() << " a " << numeric_limits<unsigned short int>::max();
+
+    // 6. Entero largo sin signo (unsigned long long)
+    unsigned long long numeroLargoSinSigno = 4000000000UL;
+    cout << "Entero largo sin signo: " << numeroLargoSinSigno << endl;
+    cout << "Rango unsigned long long : " << numeric_limits<unsigned long long>::min() << " a " << numeric_limits<unsigned long long>::max();
+
+    // 7. Entero con signo explícito (signed int)
+    signed int numeroConSigno = -42;
+    cout << "Entero con signo: " << numeroConSigno << endl;
+    cout << "Rango signed int : " << numeric_limits<signed int>::min() << " a " << numeric_limits<signed int> ::max();
+
+    // 8. Entero corto con signo explícito (signed short int)
+    signed short int numeroCortoConSigno = -32000;
+    cout << "Entero corto con signo: " << numeroCortoConSigno << endl;
+    cout << "Rango signed short int : " << numeric_limits<signed short int>::min() << " a " << numeric_limits<signed short int>::max();
+
+    // 9. Entero largo con signo explícito (signed long int)
+    signed long int numeroLargoConSigno = -1234567890L;
+    cout << "Entero largo con signo: " << numeroLargoConSigno << endl;
+    cout << "Rango signed long int : " << numeric_limits<signed long int>::min() << " a " << numeric_limits<signed long int>::max();
+
+    // 10. Entero largo largo (long long int)
+    long long int numeroLargoLargo = 123456789012345LL;
+    cout << "Entero largo largo: " << numeroLargoLargo << endl;
+    cout << "Rango long long int : " << numeric_limits<long long int>::min() << " a " << numeric_limits<long long int> ::max();
+
+    //Declaración y asignación en dos pasos 
+    int edad; 
+    cout << "Ingresa tu edad? "; 
+    cin >> edad;
+    cout << "Tu edad es: " << edad << endl;
+
+    //Numeros con punto decimal
+
+    const float pi = 3.141592653587932;
+    const double PI = 3.141592653587932;
+    cout << fixed; 
+    cout << setprecision(16); 
+    cout << "flotante pi :" << pi << endl; 
+    cout << "double PI: " << PI << endl;
+
+    float kilos; 
+    cout << "Dame tu peso : "; 
+    cin >> kilos; 
+    cout << "Tu peso es :" << kilos << endl; 
+
+    const int velocidadLuz = 300000; 
+    const float aceleraciónGravedad = 9.81; 
+
+    string nombre = "Betito"; 
+    string apellidoPaterno = "Diaz";
+
+        cout << "Nombre Completo "
+        << nombre << " BetitoDiaz "
+        << apellidoPaterno
+        << endl;
+    return 0;
+}
