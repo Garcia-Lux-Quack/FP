@@ -1,0 +1,22 @@
+// Practica7.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num = 0;
+	cout << "Dame un valor: "; 
+	cin >> num; 
+	cout << endl; 
+	if (num % 2 == 0) //Nunca cierra con ;
+	{
+		cout << "par" << endl; 
+	}
+	else //Nunca lleva condición
+	{
+		cout << "Impar" << endl;
+	}
+}
+
