@@ -41,18 +41,118 @@ int main()
         cout << "Promedio: " << ((num1 + num2 + num3) / 3); 
         cout << endl; 
 
-        //Problema 5
-        int cuenta; 
-        int porcentaje; 
-        int propina; 
-        cout << "Introduce el total de la cuenta: "; 
-        cin >> cuenta;
-        cout << "Introduce el porcentaje de propina que quiere dar: ";
-        cin >> porcentaje; 
-        cout << ((porcentaje * cuenta)/100);
-        cin >> propina; 
-        cout << "Total de cuenta: " << (cuenta + propina);
+        //Problema 5 
+float cuenta;
+float porcentaje;
+float propina;
+cout << "Introduce el total de la cuenta: ";
+cin >> cuenta;
+cout << "Introduce el porcentaje de propina que quiere dar: ";
+cin >> porcentaje;
+propina = (porcentaje * cuenta) / 100;
+cout << "Total de cuenta: " << (cuenta + propina);
+cout << endl;
+      
+//Problema 6 
+ int nume1;
+ cout << "Introduce número: ";
+ cin >> nume1;
+ cout << endl;
+
+ if (nume1 > 100)
+ {
+     cout << "El numero es mayor a 100 " << endl;
+ }
+ else  
+ {
+     cout << "El numero es menor o igual a 100" << endl; 
+ }
+
+//Problema 7 
+int nume2;
+cout << "Introduce numero: ";
+cin >> nume2;
+cout << endl;
+
+if (nume2 < 0)
+{
+    cout << "El numero es negativo " << endl;
+}
+else  
+{
+    cout << "El numero es positivo" << endl; 
+}
+
+ 
+        //Problema 8 
+        string miemail;
+        string pasword_ingresada; 
+       
+        cout << "Introduce tu email: ";
+        cin >> miemail;
         cout << endl; 
-        cout << "Total de cuenta: " << (cuenta + propina); 
+
+        cout << "Introduce tu contraseña: ";
+        cin >> pasword_ingresada; 
         cout << endl;
 
+        if (pasword_ingresada == "12345")
+        {
+            cout << "Felicidades, contraseña correcta" << endl;
+        }
+        else  
+        {
+            cout << "Contraseña incorrecta" << endl; 
+        }
+
+
+
+//Problema 9
+int grados; 
+ int centigrados; 
+ cout << "Grados Farenheith: ";
+ cin >> grados;
+ cout << "Grados en Centigrados: " << (grados - 32) * 5/9;
+ cin >> centigrados; 
+ cout << endl;
+ 
+ if (centigrados == 32)
+ {
+     cout << "0 grados centigrados" << endl; 
+ }
+ else
+ {
+     cout << "Grados en Centigrados" << endl;
+ }
+
+//Problema 10
+int peso;
+float estatura; 
+float masaCorporal; 
+
+cout << "Ingresa tu peso (en kg): ";
+cin >> peso;
+cout << "Ingresa tu estatura (en metros): ";
+cin >> estatura;
+masaCorporal = peso / (estatura * estatura);
+cout << "Masa corporal: " << masaCorporal << endl;
+
+
+if (masaCorporal < 18.5) {
+    cout << "Bajo peso" << endl;
+}
+else if (masaCorporal >= 18.5 && masaCorporal < 25) {
+    cout << "Peso normal" << endl;
+}
+else if (masaCorporal >= 25 && masaCorporal < 30) {
+    cout << "Sobre peso" << endl;
+}
+else if (masaCorporal >= 30 && masaCorporal < 35) {
+    cout << "Obeso Clase 1" << endl;
+}
+else if (masaCorporal >= 35 && masaCorporal < 40) {
+    cout << "Obeso Clase 2" << endl;
+}
+else {
+    cout << "Obeso Clase 3" << endl;
+}
