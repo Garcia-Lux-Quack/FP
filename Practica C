@@ -1,0 +1,58 @@
+// Practica C.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std; 
+
+int main()
+{
+
+        //Problema 1
+        int n1 = 5;
+        cout << "Resultado de operacion: " << (n1 * n1) << endl;
+
+        //Problema 2
+        int x = 7;
+        cout << "2x= " << (2 * x) << endl;
+        cout << "3x= " << (3 * x) << endl;
+        cout << "4x= " << (4 * x) << endl;
+        cout << "5x= " << (5 * x) << endl;
+
+        //Problema 3 
+        float libras = 2.2;
+        float peso; 
+        cout << "Introduce tu peso en kilogramos: "; 
+        cin >> peso; 
+        cout << "Peso en libars: " << (peso * libras);
+        cout << endl; 
+
+        //Problema 4
+        int num1, num2, num3; 
+        int total; 
+        cout << "Introduce un numero: ";
+        cin >> num1; 
+        cout << "Introduce un segundo numero: "; 
+        cin >> num2;
+        cout << "Introducce un tercer numero: "; 
+        cin >> num3;
+        cout << "Total: " << (num1 + num2 + num3) << endl; 
+        cout << "Promedio: " << ((num1 + num2 + num3) / 3); 
+        cout << endl; 
+
+        //Problema 5
+        int cuenta; 
+        int porcentaje; 
+        int propina; 
+        cout << "Introduce el total de la cuenta: "; 
+        cin >> cuenta;
+        cout << "Introduce el porcentaje de propina que quiere dar: ";
+        cin >> porcentaje; 
+        cout << ((porcentaje * cuenta)/100);
+        cin >> propina; 
+        cout << "Total de cuenta: " << (cuenta + propina);
+        cout << endl; 
+        cout << "Total de cuenta: " << (cuenta + propina); 
+        cout << endl;
+
