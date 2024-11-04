@@ -129,4 +129,35 @@ else
 	cout << "Por debajo del punto de ebullicion del agua" << endl; 
 }
 
+//Ejercicio 5.3 
+int x = 86; 
+int y = 45; 
+int z = 21; 
+
+if (x > y and z < y)
+{
+    cout << "Valor de x: " << x; 
+    cin >> x; 
+}
+else
+{
+    cout << "Valor invalido"; 
+}
+
+// Ejercicio 5.4 
+int distancia; 
+int tiempo; 
+cout << "Ingresa una distancia: "; 
+cin >> distancia; 
+
+if (distancia > 20 and distancia < 35)
+{
+    cout << "Tiempo"; 
+    cin >> tiempo; 
+}
+else
+{
+    cout << "Valor invalido"; 
+}
+cout << endl; 
 }
