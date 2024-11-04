@@ -1,0 +1,59 @@
+#include <iostream>
+#include <iomanip>
+using namespace std; 
+
+int main()
+{
+//Ejercicio 1
+  int a = 3; 
+	int	b = 78;
+	int c = 703;  
+	
+	if (a >= b and a >= c)
+	{
+		cout << "El valor A es mayor" << endl; 
+	}
+	else if (b >= a and b >= c)
+	{
+		cout << "El valor B es mayor" << endl; 
+	}
+	else
+	{
+		cout << "El valor C es mayor" << endl; 
+	}
+
+// Ejercicio 2 
+int a = 1; 
+int	b = 10;
+int c = 100;  
+
+if (a >= b and a >= c)
+{
+	cout << "El valor A es mayor" << endl; 
+}
+else if (b >= a and b >= c)
+{
+	cout << "El valor B es mayor" << endl; 
+}
+else
+{
+	cout << "El valor C es mayor" << endl; 
+}
+
+int a = 8; 
+int	b = 96;
+int c = 321;  
+
+if (a <= b and a <= c)
+{
+	cout << "El valor A es mayor" << endl; 
+}
+else if (b <= a and b <= c)
+{
+	cout << "El valor B es mayor" << endl; 
+}
+else
+{
+	cout << "El valor C es mayor" << endl; 
+}
+}
