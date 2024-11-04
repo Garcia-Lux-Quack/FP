@@ -56,4 +56,77 @@ else
 {
 	cout << "El valor C es mayor" << endl; 
 }
+//Ejercicio 3 
+int HH; 
+int MM; 
+int SS; 
+cout << "Ingresa la hora: ";
+cin >> HH;
+cout << "Ingresa los minutos: ";
+cin >> MM;
+cout << "Ingresa los segundos: ";
+cin >> SS;
+SS++; 
+if (SS >= 60)
+{
+	SS = 0; 
+	MM++; 
+}
+if (MM >= 60)
+{
+	MM = 0; 
+	HH++; 
+}
+cout << "La hora es:" << HH << ":" << MM << ":" << SS << endl;
+
+//Ejercicio 4
+double distancia;
+double precioporKm = 2.5;
+double precioTotal;
+int diasEstancia;
+
+cout << "Ingrese la distancia a recorrer en km: ";
+cin >> distancia;
+cout << "Ingrese los días de estancia: ";
+cin >> diasEstancia;
+precioTotal = distancia * diasEstancia * 2.5;
+
+if (diasEstancia > 7 and distancia > 800)
+{
+	 cout << "Precio Total con descuento: $"<< (precioTotal *= 0.7) << endl;
+	 
+}
+else
+{
+	cout << "Precio Total: $" << precioTotal << endl;
+}
+
+//Ejercicio 5 
+int angulos; 
+cout << "Ingrese un angulo: °"; 
+cin >> angulos; 
+
+if (angulos == 90)
+{
+	cout << "El angulo es un angulo recto" << endl; 
+}
+else
+{
+	cout << "El angulo no es un angulo recto" << endl; 
+}
+
+// Ejercicio 5.2 
+int temperatura; 
+cout << "Ingrese la temperatura: °"; 
+cin >> temperatura; 
+
+if (temperatura >= 100)
+{
+	cout << "Por encima del punto de ebullicion del agua" << endl; 
+}
+else
+{
+	cout << "Por debajo del punto de ebullicion del agua" << endl; 
+}
+
 }
