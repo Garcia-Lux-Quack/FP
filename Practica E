@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std; 
+
+int main()
+{
+// Ejercicio 1
+    string respuesta; 
+    do
+    {
+        cout << "Quieres salir  del ciclo [SI/NO]" << endl; 
+        cin >> respuesta; 
+    } while (respuesta != "SI"); 
+    cout << "Has salido del ciclo" << endl; 
+
+// Ejercicio 2 
+int numero1 = 0; 
+int numero2 = 0; 
+int total = 0; 
+int opcion; 
+string s; 
+
+ 
+do
+{
+	cout << "Menu de opciones" << endl;
+	cout << "a) (+) Suma de dos operandos" << endl;
+	cout << "b) (-) Resta de dos operandos" << endl;
+	cout << "c) (*) Multiplicacion de dos operandos" << endl;
+	cout << "d) (/) Division de dos operandos" << endl;
+	cout << "e) (%) Residuo de dos operandos" << endl;
+	cout << "s) (s) Salir" << endl;
+	cin >> opcion;
+
+	if (opcion == 's')
+	{
+		cout << "Ingrese el primer numero: "; 
+		cin >> numero1; 
+		cout << "Ingresar el segundo numero: "; 
+		cin >> numero2; 
+	}
+}
