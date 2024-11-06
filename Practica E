@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 // Ejercicio 1
+
     string respuesta; 
     do
     {
@@ -13,6 +14,7 @@ int main()
     cout << "Has salido del ciclo" << endl; 
 
 // Ejercicio 2 
+
 int numero1 = 0; 
 int numero2 = 0; 
 int total = 0; 
@@ -39,3 +41,34 @@ do
 		cin >> numero2; 
 	}
 }
+//Ejercicio 3
+
+	string tarjeta;
+	int pin = 1234; 
+	double saldo = 1000.00;
+	char opcion;
+	bool tarjetaValida = false;
+
+	cout << "Inserte la tarjeta (chip o banda): ";
+	cin >> tarjeta;
+
+	if (tarjeta == "chip" or tarjeta == "banda")
+	{
+		tarjetaValida = true;
+	}
+	else
+	{
+		cout << "Tarjeta invalida. Proceso terminado." << endl; 
+	}
+
+	cout << "Ingrese su PIN (4 digitos): "; 
+	cin >> pin; 
+
+	if (pin == 1234)
+	{
+		cout << "PIN valido";
+	}
+	else
+	{
+		cout << "PIN invalidio. Proceso terminado." << endl; 
+	}
