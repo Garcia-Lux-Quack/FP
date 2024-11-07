@@ -4,24 +4,32 @@ using namespace std;
 int main()
 {
 // Ejercicio 1
-
-    string respuesta; 
-    do
+string respuesta;
+do {
+    cout << "Quieres salir  del ciclo [SI/NO]" << endl;
+    cin >> respuesta;
+    if (respuesta == "SI")
     {
-        cout << "Quieres salir  del ciclo [SI/NO]" << endl; 
-        cin >> respuesta; 
-    } while (respuesta != "SI"); 
-    cout << "Has salido del ciclo" << endl; 
+        cout << "Ciclo terminado." << endl;
+        break;
+    }
+    else if (respuesta == "NO")
+    {
+        cout << "Volvemos a preguntar... " << endl;
+    }
+    else
+    {
+        cout << "Respuesta no valida. Contestar SI o NO" << endl;
+    }
+} while (true); 
+
 
 // Ejercicio 2 
+int numero1 = 0;
+int numero2 = 0;
+int total = 0;
+char opcion;
 
-int numero1 = 0; 
-int numero2 = 0; 
-int total = 0; 
-int opcion; 
-string s; 
-
- 
 do
 {
 	cout << "Menu de opciones" << endl;
@@ -35,40 +43,138 @@ do
 
 	if (opcion == 's')
 	{
-		cout << "Ingrese el primer numero: "; 
-		cin >> numero1; 
-		cout << "Ingresar el segundo numero: "; 
-		cin >> numero2; 
+		cout << "Saliendo del menu..." << endl;
+		break;
+	}
+
+	cout << "Ingrese el primer numero: ";
+	cin >> numero1;
+	cout << "Ingrese el segundo numero: ";
+	cin >> numero2;
+
+	switch (opcion)
+	{
+	case 'a':
+		total = numero1 + numero2;
+		cout << "Resultado: " << total << endl;
+		break;
+
+	case 'b':
+		total = numero1 - numero2;
+		cout << "Resultado: " << total << endl;
+		break;
+
+	case 'c':
+		total = numero1 * numero2;
+		cout << "Resultado: " << total << endl;
+		break;
+
+	case 'd':
+		total = numero1 / numero2;
+		cout << "Resultado: " << total << endl;
+		if (numero2 != 0)
+		{
+			total = numero1 / numero2;
+			cout << "Resultado: " << total << endl;
+		}
+		else
+		{
+			cout << "Error..." << endl;
+		}
+		break;
+
+	case 'e':
+		if (numero2 != 0)
+		{
+			total = numero1 % numero2;
+			cout << "Resultado: " << total << endl;
+		}
+		else
+		{
+			cout << "Error." << endl; 
+		}
+		break;
+
+	    default:
+		cout << "Opcion no valida";
+	}
+}while (true);
+
+//Ejercicio 3
+ string tarjeta; 
+ string pin; 
+ float saldo = 1000.0; 
+ float montoRetiro; 
+ char operacion; 
+
+ cout << "Ingrese el numero de tarjeta (chip/banda): "; 
+ cin >> tarjeta;
+
+ if (tarjeta != "1234567890")
+ {
+     cout << "Tarjeta invalida. Proceso terminado..." << endl; 
+ }
+
+ cout << "Ingrese su PIN (4 digitos): "; 
+ cin >> pin; 
+
+ if (pin != "1234")
+ {
+     cout << "PIN valido" << endl; 
+ }
+
+ do {
+     cout << "Menu del cajero: "; 
+     cout << "a) Consulta de saldo"; 
+     cout << "b) Retiro de dinero"; 
+     cout << "c) Cancelar operacion"; 
+     cin >> operacion; 
+     switch (operacion) {
+     case 'a': 
+         cout << "Su saldo actual es: $" << saldo << endl; 
+         break; 
+     case 'b': 
+         cout << "Ingrese el monto a retirar: $"; 
+         cin >> montoRetiro; 
+
+
+     }
+ }
+
+// Ejercicio 4 
+//Los valores que se dan son alateorios, por lo tanto no se sabe que resultado puede dar
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	srand(time(NULL)); 
+	int castigo = 0; 
+	int	vida = 12; 
+	int premio = 0; 
+	
+	cout << "Vida inicial " << vida << endl; 
+
+	while (vida > 0)
+	{
+		//Deducir uno vida 
+		vida--; 
+		cout << "Costo de ciclo " << vida << endl; 
+
+		// Castigo? 
+		castigo = rand() % 2; 
+		if (castigo == 1)
+		{
+			vida = vida - 3;
+			cout << "Castigo " << vida << endl; 
+		}
+		premio = rand() % 2;
+		if (premio == 1)
+		{
+			vida == vida + 3; 
+			cout << "Premio " << vida << endl; 
+		}
+		cout << "Vida despues de ciclo " << vida << endl; 
 	}
 }
-//Ejercicio 3
-
-	string tarjeta;
-	int pin = 1234; 
-	double saldo = 1000.00;
-	char opcion;
-	bool tarjetaValida = false;
-
-	cout << "Inserte la tarjeta (chip o banda): ";
-	cin >> tarjeta;
-
-	if (tarjeta == "chip" or tarjeta == "banda")
-	{
-		tarjetaValida = true;
-	}
-	else
-	{
-		cout << "Tarjeta invalida. Proceso terminado." << endl; 
-	}
-
-	cout << "Ingrese su PIN (4 digitos): "; 
-	cin >> pin; 
-
-	if (pin == 1234)
-	{
-		cout << "PIN valido";
-	}
-	else
-	{
-		cout << "PIN invalidio. Proceso terminado." << endl; 
-	}
