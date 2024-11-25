@@ -48,4 +48,185 @@ for (int i = 1; i < 10; i++)
 cout << "El numero menor del arreglo es: " << menor << endl;
 
 //EJERCICIO 4 
+ int arreglo[] = { 20,56,34,95,68,70,69,13 }; 
+ int tamaño = 8; 
+ int suma = 0; 
+ float promedio = 0.0; 
+
+ for (int i = 0; i < tamaño; i++)
+ {
+     suma += arreglo[i]; 
+ }
+ promedio = suma / tamaño; 
+
+ cout << "El promedio es: " << promedio << endl; 
+
+//EJERCICIO 5 
+  int arreglo[] = { 0,1,2,3,4,5,6,7,8,9}; 
+  int tamaño = 10; 
+  int mayor = arreglo[0]; 
+  int segundomayor = arreglo[0]; 
+
+  for (int i = 1; i < tamaño; i++)
+  {
+      if (arreglo[0] > mayor)
+      {
+          segundomayor = mayor; 
+          mayor = arreglo[0]; 
+      }
+      else if (arreglo[i] > segundomayor && arreglo[i] != mayor)
+      {
+          segundomayor = arreglo[i]; 
+      }
+  }
+  if (mayor == segundomayor)
+  {
+      cout << "No hay segundo valor mayor" << endl; 
+  }
+  else
+  {
+      cout << "El segundo valor mayor es: " << segundomayor << endl; 
+  }
+
+//EJERCICIO 6 
+int arreglo[] = {10,15,20,25,30,35,40,45,50,55}; 
+int pares = 0; 
+int impares = 0; 
+int tamaño = 10; 
+
+for (int i = 0; i < tamaño; i++)
+{
+    if (arreglo[i] % 2 == 0)
+    {
+        pares++; 
+    }
+    else
+    {
+        impares++;
+    }
+}
+cout << "Números pares: " << pares << endl; 
+cout << "Números impares: " << impares << endl; 
+
+//EJERCICIO 7 
+{
+    int numero;
+    cout << "ingrese el numero para mostrar la tabla de multiplicar: ";
+    cin >> numero;
+    cout << "Tabla de multiplicar del " << numero << endl;
+    for (int i = 1; i <= 10; i++) {
+        cout << numero << " x " << i << " = " << numero * i << endl;
+    }
+}
+//EJERCICIO 8
+    const int TAMANO = 1000;
+    int arreglo[TAMANO];
+
+    srand(time(0));
+  
+    for (int i = 0; i < TAMANO; i++) {
+        arreglo[i] = rand() % 1000 + 1;
+    }
+
+
+    int mayor1 = 0, mayor2 = 0, mayor3 = 0;
+
+
+    for (int i = 0; i < TAMANO; i++) {
+        if (arreglo[i] > mayor1) {
+ 
+            mayor3 = mayor2;
+            mayor2 = mayor1;
+            mayor1 = arreglo[i];
+        }
+        else if (arreglo[i] > mayor2) {
+         
+            mayor3 = mayor2;
+            mayor2 = arreglo[i];
+        }
+        else if (arreglo[i] > mayor3) {
+         
+            mayor3 = arreglo[i];
+        }
+    }
+
+    cout << "Los tres mayores elementos son:" << endl;
+    cout << "Mayor 1: " << mayor1 << endl;
+    cout << "Mayor 2: " << mayor2 << endl;
+    cout << "Mayor 3: " << mayor3 << endl;
+}
+//EJERCICIO 9
+{
+    const int TAMANO = 1000;
+    double arreglo[TAMANO];
+
+    srand(time(0));
+
+
+    for (int i = 0; i < TAMANO; i++)
+    {
+        arreglo[i] = static_cast<double>(rand()) / RAND_MAX * 1000.0;
+    }
+
+
+    double menor = numeric_limits<double>::max();
+    double segundo_menor = numeric_limits<double>::max();
+
+    for (int i = 0; i < TAMANO; i++)
+    {
+        if (arreglo[i] < menor)
+        {
+
+            segundo_menor = menor;
+            menor = arreglo[i];
+        }
+        else if (arreglo[i] < segundo_menor && arreglo[i] != menor)
+        {
+            segundo_menor = arreglo[i];
+        }
+    }
+
+    if (segundo_menor == numeric_limits<double>::max())
+    {
+        cout << "No hay un segundo menor elemento válido en el arreglo." << endl;
+    }
+    else
+    {
+        cout << "El menor elemento es: " << menor << endl;
+        cout << "El segundo menor elemento es: " << segundo_menor << endl;
+    }
+}
+//EJERCICIO 10
+{
+    const int TAMANO = 10;
+    int arreglo[TAMANO];
+
+    srand(time(0));
+
+    for (int i = 0; i < TAMANO; i++) {
+        arreglo[i] = rand() % 100 + 1; 
+    }
+
+    cout << "Arreglo original: ";
+    for (int i = 0; i < TAMANO; i++) {
+        cout << arreglo[i] << " ";
+    }
+    cout << endl;
+
+    int inicio = 0;
+    int fin = TAMANO - 1;
+    while (inicio < fin) {
+        int temp = arreglo[inicio];
+        arreglo[inicio] = arreglo[fin];
+        arreglo[fin] = temp;
+
+        inicio++;
+        fin--;
+    }
+
+    cout << "Arreglo invertido: ";
+    for (int i = 0; i < TAMANO; i++) {
+        cout << arreglo[i] << " ";
+    }
+    cout << endl;
 }
