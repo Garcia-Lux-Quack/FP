@@ -1,0 +1,85 @@
+#include <iostream>
+using namespace std; 
+
+struct Alumno
+{
+    //Atributos o propiedades
+    string nombre;
+    int cuenta;
+}; 
+int main()
+{
+    Alumno lucia;
+    lucia.nombre = "Lucia"; 
+    lucia.cuenta = 335017;
+
+    Alumno saul; 
+    saul.nombre = "Saul"; 
+    saul.cuenta = 123456;
+
+    cout << "Nombre: " << lucia.nombre << endl; 
+    cout << "Cuenta: " << lucia.cuenta << endl; 
+
+   cout << "Nombre: " << saul.nombre << endl; 
+   cout << "Cuenta: " << saul.cuenta << endl; 
+}
+
+struct Alumno
+{
+    //Atributos o propiedades
+
+    string nombre;
+    int cuenta;
+
+    //Funciones de la estructura
+public: 
+    static void altaAlumno(vector<Alumno> & vi)
+    {
+        Alumno alumno; 
+        cout << "Dame tu nombre: "; 
+        cin >> alumno.nombre; 
+        cout << "Dame tu cuenta: "; 
+        cin >> alumno.cuenta;
+        vi.push_back(alumno); 
+    }
+    static void imprimeDatos(vector<Alumno>vi)
+    {
+        cout << "Tamano del vector: " << vi.size() << endl; 
+        for (int i = 0; i < vi.size(); i++)
+        {
+            cout << "Nombre: " << vi[i].nombre << endl; 
+            cout << "Cuenta: " << vi[i].cuenta << endl; 
+        }
+
+    Alumno;;altaAlumno();
+
+
+string nombre;
+int cuenta;
+
+//Funciones de la estructura
+
+    static void altaAlumno()
+    {
+        Alumno alumno;
+        cout << "Dame tu nombre: ";
+        cin >> alumno.nombre;
+        cout << "Dame tu cuenta: ";
+        cin >> alumno.cuenta;
+        imprimeDatos(alumno);
+    }
+    static void imprimeDatos(Alumno alumno)
+    {
+        cout << "Nombre: " << alumno.nombre << endl;
+        cout << "Cuenta: " << alumno.cuenta << endl;
+        cout << endl;
+    }
+
+    vector < Alumno > v; 
+    int numAlumno; 
+    cout << "Numero de alumnos a dar de alta: "; 
+    cin >> numAlumno; 
+    for (int i=0;  i<numAlumno; i++)
+    {
+        Alumno;; altaAlumno(v);
+        Alumno;; imprimeDatos(v); 
