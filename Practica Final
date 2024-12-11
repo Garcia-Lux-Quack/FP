@@ -7,6 +7,71 @@ namespace Practica
         static void Main(string[] args)
        
             {
+Practica B
+        {
+            //Ejercicio 1.1
+            // 1
+            Console.WriteLine ("Problema 1: "+(3 + 5 * 2 / 2 - 1));
+         
+            // 2 
+            Console.WriteLine ("Problema 2: "+(3 + 5 / 2 - 1));
+            
+            // 3
+            Console.WriteLine ("Problema 3: "+(3 + 5 - 1));
+            
+            // 4 
+            Console.WriteLine ("Problema 4: "+(8 - 1));
+            
+            // 5 
+            Console.WriteLine ("Problema 5: "+(1 / 3 * 3));
+            
+
+            //Ejercio 1.2 
+            int num = 4;
+            Console.WriteLine("Ejercicio 1.2: "+(num * num));
+            
+            //Ejercicio 1.3 
+            double yardas = 9.144;
+            Console.WriteLine ("Ejercicio 1.3: "+(10 * yardas / 1));
+
+            //Ejercicio 1.4 
+            double valor = 200000;
+            Console.WriteLine ("Resultado:"+(valor * 0.8));
+            double depreciar = 160000;
+            Console.WriteLine ("Resultado: "+(depreciar / 5));
+
+            //Ejercicio 1.5 
+            double sueldo = 25000;
+            Console.WriteLine ("Parcial: "+(sueldo - 900));
+            double parcial = 24100;
+            Console.WriteLine("Impuesto: " + (parcial * 0.015));
+
+            //Ejercicio 1.6
+            Console.WriteLine("Problema 1: " + (3 * 4));
+            Console.WriteLine ("Problema 2: "+(12 / 3));
+            Console.WriteLine("Problema 2: " + (12 / 3));
+            Console.WriteLine ("Problema 4: "+(12 % 7));
+            Console.WriteLine("Problema 3: " + (12 % 3)));
+            Console.WriteLine ("Problema 6: "+(10 / 100));
+
+            //Ejercicio 1.7
+            double a = 10;
+            double b = 20;
+            Console.WriteLine("Problema 6: " + (10 / 100));    
+            Console.WriteLine ("ii: "+(a < b));
+            Console.WriteLine ("iii: "+(a == b));
+            Console.WriteLine ("iv: "+(a != b));
+            Console.WriteLine ("v: "+((a + b) > 100));
+            Console.WriteLine ("vi: "+((a - b) == 0));
+            Console.WriteLine ("vii: "+((a * b) > 500));
+            Console.WriteLine ("viii: "+((a * b) < 100));
+            Console.WriteLine ("ix: "+((a - b) < 0));
+            Console.WriteLine ("x: "+(a < 20));
+        }
+}
+    }
+
+Practica C
             //Problema 1
             int n1 = 5;
             Console.WriteLine("Resultado de operacion: "+(n1 * n1));
@@ -157,67 +222,502 @@ namespace Practica
             {
                 Console.WriteLine ("Obeso Clase 3");
             }
-        
 
+Practica D 
+        // EJERCICIO 1
+        int a = 3; 
+        int b = 78;
+        int c = 703;  
+	
+        if (a >= b && a >= c) // Se usa && en lugar de "and"
         {
-            //Ejercicio 1.1
-            // 1
-            Console.WriteLine ("Problema 1: "+(3 + 5 * 2 / 2 - 1));
-         
-            // 2 
-            Console.WriteLine ("Problema 2: "+(3 + 5 / 2 - 1));
-            
-            // 3
-            Console.WriteLine ("Problema 3: "+(3 + 5 - 1));
-            
-            // 4 
-            Console.WriteLine ("Problema 4: "+(8 - 1));
-            
-            // 5 
-            Console.WriteLine ("Problema 5: "+(1 / 3 * 3));
-            
-
-            //Ejercio 1.2 
-            int num = 4;
-            Console.WriteLine("Ejercicio 1.2: "+(num * num));
-            
-            //Ejercicio 1.3 
-            double yardas = 9.144;
-            Console.WriteLine ("Ejercicio 1.3: "+(10 * yardas / 1));
-
-            //Ejercicio 1.4 
-            double valor = 200000;
-            Console.WriteLine ("Resultado:"+(valor * 0.8));
-            double depreciar = 160000;
-            Console.WriteLine ("Resultado: "+(depreciar / 5));
-
-            //Ejercicio 1.5 
-            double sueldo = 25000;
-            Console.WriteLine ("Parcial: "+(sueldo - 900));
-            double parcial = 24100;
-            Console.WriteLine("Impuesto: " + (parcial * 0.015));
-
-            //Ejercicio 1.6
-            Console.WriteLine("Problema 1: " + (3 * 4));
-            Console.WriteLine ("Problema 2: "+(12 / 3));
-            Console.WriteLine("Problema 2: " + (12 / 3));
-            Console.WriteLine ("Problema 4: "+(12 % 7));
-            Console.WriteLine("Problema 3: " + (12 % 3)));
-            Console.WriteLine ("Problema 6: "+(10 / 100));
-
-            //Ejercicio 1.7
-            double a = 10;
-            double b = 20;
-            Console.WriteLine("Problema 6: " + (10 / 100));    
-            Console.WriteLine ("ii: "+(a < b));
-            Console.WriteLine ("iii: "+(a == b));
-            Console.WriteLine ("iv: "+(a != b));
-            Console.WriteLine ("v: "+((a + b) > 100));
-            Console.WriteLine ("vi: "+((a - b) == 0));
-            Console.WriteLine ("vii: "+((a * b) > 500));
-            Console.WriteLine ("viii: "+((a * b) < 100));
-            Console.WriteLine ("ix: "+((a - b) < 0));
-            Console.WriteLine ("x: "+(a < 20));
+            Console.WriteLine("El valor A es mayor"); 
         }
-}
+        else if (b >= a && b >= c)
+        {
+            Console.WriteLine("El valor B es mayor"); 
+        }
+        else
+        {
+            Console.WriteLine("El valor C es mayor"); 
+        }
+
+        a = 1; 
+        b = 10;
+        c = 100;  
+
+        if (a >= b && a >= c)
+        {
+            Console.WriteLine("El valor A es mayor"); 
+        }
+        else if (b >= a && b >= c)
+        {
+            Console.WriteLine("El valor B es mayor"); 
+        }
+        else
+        {
+            Console.WriteLine("El valor C es mayor"); 
+        }
+
+        a = 8; 
+        b = 96;
+        c = 321;  
+
+        if (a <= b && a <= c)
+        {
+            Console.WriteLine("El valor A es menor"); 
+        }
+        else if (b <= a && b <= c)
+        {
+            Console.WriteLine("El valor B es menor"); 
+        }
+        else
+        {
+            Console.WriteLine("El valor C es menor"); 
+        }
+
+        // EJERCICIO 3
+        int HH, MM, SS;
+        
+        Console.Write("Ingresa la hora: ");
+        HH = Convert.ToInt32(Console.ReadLine());
+        
+        Console.Write("Ingresa los minutos: ");
+        MM = Convert.ToInt32(Console.ReadLine());
+        
+        Console.Write("Ingresa los segundos: ");
+        SS = Convert.ToInt32(Console.ReadLine());
+        
+        SS++; 
+        if (SS >= 60)
+        {
+            SS = 0; 
+            MM++; 
+        }
+        if (MM >= 60)
+        {
+            MM = 0; 
+            HH++; 
+        }
+        
+        Console.WriteLine($"La hora es: {HH:D2}:{MM:D2}:{SS:D2}"); 
+
+        // EJERCICIO 4
+        double distancia;
+        double precioporKm = 2.5;
+        double precioTotal;
+        int diasEstancia;
+
+        Console.Write("Ingrese la distancia a recorrer en km: ");
+        distancia = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese los días de estancia: ");
+        diasEstancia = Convert.ToInt32(Console.ReadLine());
+
+        precioTotal = distancia * diasEstancia * precioporKm;
+
+        if (diasEstancia > 7 && distancia > 800)
+        {
+            precioTotal *= 0.7; // Aplicar descuento
+            Console.WriteLine($"Precio Total con descuento: ${precioTotal}");
+        }
+        else
+        {
+            Console.WriteLine($"Precio Total: ${precioTotal}");
+        }
+
+
+        // EJERCICIO 5
+        int angulos; 
+        Console.Write("Ingrese un ángulo: °"); 
+        angulos = Convert.ToInt32(Console.ReadLine()); 
+
+        if (angulos == 90)
+        {
+            Console.WriteLine("El ángulo es un ángulo recto"); 
+        }
+        else
+        {
+            Console.WriteLine("El ángulo no es un ángulo recto"); 
+        }
+
+        // EJERCICIO 5.2
+        int temperatura; 
+        Console.Write("Ingrese la temperatura: °"); 
+        temperatura = Convert.ToInt32(Console.ReadLine()); 
+
+        if (temperatura >= 100)
+        {
+            Console.WriteLine("Por encima del punto de ebullición del agua"); 
+        }
+        else
+        {
+            Console.WriteLine("Por debajo del punto de ebullición del agua"); 
+        }
+
+        // EJERCICIO 5.3
+        int x = 86; 
+        int y = 45; 
+        int z = 21; 
+
+        if (x > y && z < y)
+        {
+            Console.WriteLine($"Valor de x: {x}"); 
+            x = Convert.ToInt32(Console.ReadLine()); 
+        }
+        else
+        {
+            Console.WriteLine("Valor inválido"); 
+        }
+
+        // EJERCICIO 5.4
+        
+        int distancia2; 
+        int tiempo; 
+        Console.Write("Ingresa una distancia: "); 
+        distancia2 = Convert.ToInt32(Console.ReadLine()); 
+
+        if (distancia2 > 20 && distancia2 < 35)
+        {
+            Console.Write("Tiempo: "); 
+            tiempo = Convert.ToInt32(Console.ReadLine()); 
+        }
+        else
+        {
+            Console.WriteLine("Valor inválido"); 
+        }
+
+Practa E
+        // Ejercicio 1
+        string respuesta;
+        do
+        {
+            Console.WriteLine("Quieres salir  del ciclo [SI/NO]");
+            respuesta = (Console.ReadLine());
+            if (respuesta.ToUpper() == "SI")
+            {
+                Console.WriteLine("Ciclo terminado.");
+                break;
+            }
+            else if (respuesta == "NO")
+            {
+                Console.WriteLine("Volvemos a preguntar... ");
+            }
+            else
+            {
+                Console.WriteLine("Respuesta no valida. Contestar SI o NO");
+            }
+        } while (true);
+
+
+        // Ejercicio 2 
+        int numero1 = 0;
+        int numero2 = 0;
+        int total = 0;
+        char opcion;
+
+        do
+        {
+            Console.WriteLine("Menu de opciones");
+            Console.WriteLine("a) (+) Suma de dos operandos");
+            Console.WriteLine("b) (-) Resta de dos operandos");
+            Console.WriteLine("c) (*) Multiplicacion de dos operandos");
+            Console.WriteLine("d) (/) Division de dos operandos");
+            Console.WriteLine("e) (%) Residuo de dos operandos");
+            Console.WriteLine("s) (s) Salir");
+            opcion = Console.ReadLine()[0];
+
+            if (opcion == 's')
+            {
+                Console.WriteLine("Saliendo del menu...");
+                break;
+            }
+
+            Console.WriteLine("Ingrese el primer numero: ");
+            numero1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero: ");
+            numero2 = int.Parse(Console.ReadLine());
+
+            switch (opcion)
+            {
+                case 'a':
+                    total = numero1 + numero2;
+                    Console.WriteLine("Resultado: " + total);
+                    break;
+
+                case 'b':
+                    total = numero1 - numero2;
+                    Console.WriteLine("Resultado: " + total);
+                    break;
+
+                case 'c':
+                    total = numero1 * numero2;
+                    Console.WriteLine("Resultado: " + total);
+                    break;
+
+                case 'd':
+                    total = numero1 / numero2;
+                    Console.WriteLine("Resultado: " + total);
+                    if (numero2 != 0)
+                    {
+                        total = numero1 / numero2;
+                        Console.WriteLine("Resultado: " + total);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error...");
+                    }
+                    break;
+
+                case 'e':
+                    if (numero2 != 0)
+                    {
+                        total = numero1 % numero2;
+                        Console.WriteLine("Resultado: " + total);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error.");
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Opcion no valida");
+            }
+        } while (true);
+
+        //Ejercicio 3
+        string tarjeta;
+        string pin;
+        float saldo = 1000_0;
+        float montoRetiro;
+        char operacion;
+
+        Console.WriteLine("Ingrese el numero de tarjeta (chip/banda): ");
+        tarjeta = Console.ReadLine();
+
+        if (tarjeta != "1234567890")
+        {
+            Console.WriteLine("Tarjeta invalida. Proceso terminado...");
+        }
+
+        Console.WriteLine("Ingrese su PIN (4 digitos): ");
+        pin = Console.ReadLine();
+
+        if (pin != "1234")
+        {
+            Console.WriteLine("PIN valido");
+        }
+
+        do
+        {
+            Console.WriteLine("Menu del cajero: ");
+            Console.WriteLine("a) Consulta de saldo");
+            Console.WriteLine("b) Retiro de dinero");
+            Console.WriteLine("c) Cancelar operacion");
+            operacion = Console.ReadLine()[0];
+            switch (operacion)
+            {
+                case 'a':
+                    Console.WriteLine("Su saldo actual es: $" + saldo);
+                    break;
+                case 'b':
+                    Console.WriteLine("Ingrese el monto a retirar: $");
+                    montoRetiro = float.Parse(Console.ReadLine());
+                    if (montoRetiro > saldo)
+                    {
+                        Console.WriteLine("Error: No tiene suficiente saldo para realizar este retiro.");
+                    }
+                    else if (montoRetiro <= 0)
+                    {
+                        Console.WriteLine("Error: El monto de retiro debe ser positivo.");
+                    }
+                    else
+                    {
+                        saldo -= montoRetiro;
+                        Console.WriteLine("Retiro exitoso. Su saldo restante es: $" + saldo);
+                    }
+                    break;
+
+                case 'c':
+                    Console.WriteLine("Operacion cancelada.");
+                    break;
+
+                default:
+                    Console.WriteLine("Opcion no valida.");
+                    break;
+            }
+
+            if (opcion != 'c')
+            {
+                Console.WriteLine("Desea realizar otra operacion?: ");
+                char continuar;
+                continuar = Console.ReadLine()[0];
+
+                if (continuar == 'n')
+                {
+                    Console.WriteLine("Operaciones terminadas.");
+                    break;
+                }
+            }
+
+        } while (true);
     }
+    // Ejercicio 4 
+    {
+        Random rand = new Random();
+        int castigo = 0;
+        int vida = 12;
+        int premio = 0;
+
+        Console.WriteLine("Vida inicial " + vida);
+
+        while (vida > 0)
+        {
+            //Deducir uno vida 
+            vida--;
+            Console.WriteLine("Costo de ciclo " + vida);
+
+            // Castigo? 
+            castigo = rand.Next() % 2;
+            if (castigo == 1)
+            {
+                vida = vida - 3;
+                Console.WriteLine("Castigo " + vida);
+            }
+            premio = rand.Next() % 2;
+            if (premio == 1)
+            {
+                vida += 3;
+                Console.WriteLine("Premio " + vida);
+            }
+            Console.WriteLine("Vida despues de ciclo " + vida);
+        }
+
+Practica F 
+ //EJERCICIO 1
+ for (int i = 0; i <= 9; i++)
+ {
+     Console.WriteLine(i + " , ");
+ }
+ for (int i = 9; i >= 0; i--)
+ {
+     Console.WriteLine(i + " , ");
+ }
+
+ //EJERCICIO 2
+ for (int i = 0; i <= 99; i++)
+ {
+     Console.WriteLine(i + " , ");
+ }
+ for (int i = 99; i >= 0; i--)
+ {
+     Console.WriteLine(i + " , ");
+ }
+
+ //EJERCICIO 3
+ for (int i = 2; i <= 100; i++)
+ {
+     if (i % 2 == 0)
+     {
+         Console.WriteLine(i + " , ");
+     }
+ }
+
+ //EJERCICIO 4
+ int minimo;
+ int maximo;
+ Console.WriteLine("Dame el minimo: ");
+ minimo = int.Parse(Console.ReadLine());
+
+ Console.WriteLine("Dame el maximo: ");
+ maximo = int.Parse(Console.ReadLine());
+
+ for (int i = minimo; i <= maximo; i++)
+ {
+     Console.WriteLine(i + " , ");
+ }
+
+ //EJERCICIO 5
+ int minimo1;
+ int maximo1;
+ Console.WriteLine("Dame el minimo: ");
+ minimo1 = int.Parse(Console.ReadLine());
+
+ Console.WriteLine("Dame el maximo: ");
+ maximo1 = int.Parse(Console.ReadLine());
+
+ for (int i = maximo; i >= minimo; i--)
+ {
+     Console.WriteLine(i + " , ");
+ }
+
+Practica G
+    //Ejercicio 1
+string []nombreMes = new string[12];
+nombreMes[0] = "Enero"; 
+nombreMes[1] = "Febrero";
+nombreMes[2] = "Marzo";
+nombreMes[3] = "Abril";
+nombreMes[4] = "Mayo";
+nombreMes[5] = "Junio";
+nombreMes[6] = "Julio";
+nombreMes[7] = "Agosto";
+nombreMes[8] = "Septiembre";
+nombreMes[9] = "Octubre";
+nombreMes[10] = "Novimebre";
+nombreMes[11] = "Diciembre";
+
+for (int i = 0; i < 12; i++)
+{
+    Console.WriteLine (nombreMes[i]); 
+}
+for (string[] mes = nombreMes)
+{
+    Console.WriteLine (mes); 
+}
+
+//Ejercicio 2
+string [] planetas = new string[8]; 
+planetas[0] = "Mercurio";
+planetas[1] = "Venus";
+planetas[2] = "Tierra";
+planetas[3] = "Marte";
+planetas[4] = "Jupiter";
+planetas[5] = "Saturno";
+planetas[6] = "Urano";
+planetas[7] = "Neptuno";
+
+for (int i = 0; i < 12; i++)
+{
+    Console.WriteLine (planetas[i]); 
+}
+for (string[] planeta = planetas)
+{
+    Console.WriteLine (planeta); 
+}
+
+Practica I
+    //Sudoku 
+    int [,] matriz=
+{
+    { 0,3,0,0,0,0,0,0,0},
+    { 0,2,0,9,0,6,3,0,0},
+    { 0,6,0,4,0,2,0,9,0}, 
+    { 1,0,0,0,9,0,4,0,0},
+    { 0,0,8,1,0,3,5,0,0},
+    { 0,0,5,0,7,0,0,0,3},
+    { 0,5,0,3,0,1,0,6,0},
+    { 0,0,4,6,0,7,0,3,0},
+    { 0,0,0,0,0,0,0,8,0}
+    };
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 9; j++)
+        {
+            Console.WriteLine(matriz[i , j] + "");
+        }
+    }
+}
+
+        
